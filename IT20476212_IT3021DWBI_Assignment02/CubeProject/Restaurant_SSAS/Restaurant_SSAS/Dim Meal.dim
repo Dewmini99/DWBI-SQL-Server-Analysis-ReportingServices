@@ -1,0 +1,240 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b5304701-a547-4c24-a67e-04a5d79e3f9d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Meal</ID>
+  <Name>Dim Meal</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2012" scrolltop="-6212" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7535" y="16171" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimMeal" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3471" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008f0d0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimMeal" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2012</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6212</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a8a26d11-3451-4ff5-a20d-95c6b535e226">
+    <DataSourceViewID>DSV_Restaurant_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="f094e81d-63a2-44fe-991e-a580f8d836ce">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="579d5546-8260-42ef-8132-ca5666a6efe0">
+      <ID>Meal SK</ID>
+      <Name>Meal SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a8975dc-17b4-4f56-a348-5e92b0215ce7">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed27f949-d7b5-4f43-a6e1-0163162f7ef9">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>MealSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a8246c96-ce6e-4ede-9817-2a9bc9b8e4cd">
+          <AttributeID>Alternate Meal ID</AttributeID>
+          <Name>Alternate Meal ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce093c9f-acad-4cb4-a1a2-3dea85c1f17a">
+          <AttributeID>Primary Cuisiness</AttributeID>
+          <Name>Primary Cuisiness</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="524b0883-ea6e-47ce-b768-9af44e816fe6">
+          <AttributeID>Cuisines</AttributeID>
+          <Name>Cuisines</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a108d442-e4fe-4e4f-b851-2c83653b5d8d">
+          <AttributeID>Special Diets</AttributeID>
+          <Name>Special Diets</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eec59bf6-45ad-4617-995c-c09497fdfda3">
+          <AttributeID>Cus Rest Rank</AttributeID>
+          <Name>Cus Rest Rank</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a66019f6-a017-47d2-ad78-d047ac291bf4">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d149e012-50d8-4e90-ab1f-4fcdaffbf75e">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="acb5eed2-cf6d-42ea-a568-8837022af642">
+      <ID>Alternate Meal ID</ID>
+      <Name>Alternate Meal ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a341efb7-0bb2-474f-bbdb-2d6b3a5a48c8">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="237fb2c4-2619-48af-a341-ba837e66208f">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>AlternateMealID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1db175d4-f9a0-49f7-b165-22cb2d7035eb">
+      <ID>Primary Cuisiness</ID>
+      <Name>Primary Cuisiness</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4dda33e-1b39-4b78-9833-9ec9dcd8a466">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df037c2e-b42a-4ea2-b1b6-8eb342003e67">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>primary_cuisiness</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d709c6b-b8cc-4a01-bd64-9ba6674faa1d">
+      <ID>Cuisines</ID>
+      <Name>Cuisines</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49f3a2b6-3ab1-4150-9c43-01765c5afccb">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c16b12e-73f8-4f8a-8bd0-ebecffb66f7b">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>cuisines</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="50983b85-0e61-4fa6-908b-379ff47bd517">
+      <ID>Special Diets</ID>
+      <Name>Special Diets</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c99039e-9d07-4260-b578-c4eb7f400184">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b529fa17-3b37-4d32-94fd-0c887ba040cf">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>special_diets</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8a60cd8-2ecb-4862-a948-6fb97afd78d0">
+      <ID>Cus Rest Rank</ID>
+      <Name>Cus Rest Rank</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="977b43dd-96ea-45d5-a1fd-6495b3d3a21e">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a33c15f-27c6-4b74-96b8-30f722cedd7f">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>cus_rest_rank</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="df9086e2-8629-4302-904c-d7988a861ed8">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e70e1975-8d31-4cd3-8641-0785c8424aac">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8c7421b-7b4a-46a9-aa86-9cc480312a61">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7430d005-0abc-433b-a95c-7a4401082a39">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6210756-10ad-4985-a233-6fe8d6390718">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69f77166-f81e-4e2a-9b66-bd6d7b52e8a3">
+            <TableID>dbo_DimMeal</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

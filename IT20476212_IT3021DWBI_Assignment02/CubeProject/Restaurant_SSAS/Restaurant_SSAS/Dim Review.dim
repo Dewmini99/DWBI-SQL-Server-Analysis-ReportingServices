@@ -1,0 +1,240 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3628355f-2bcc-452e-ab48-4b86e0f4c613" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Review</ID>
+  <Name>Dim Review</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1990" scrolltop="-6212" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7535" y="16171" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimReview" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3514" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ba0d0000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimReview" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6212</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8702d67a-90b9-403d-983a-3b0871a16228">
+    <DataSourceViewID>DSV_Restaurant_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="2ad4a6cf-a8ab-4683-b13f-27a767fc1d26">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="100759f0-ad4b-4595-bbd8-11ff79bd204e">
+      <ID>Review SK</ID>
+      <Name>Review SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56fcf3f7-e426-49f5-b420-9a8d5d05c297">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7fe0939-aaba-48ec-8377-0f7a0856833f">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>ReviewSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0a0751f6-52ad-485a-969f-f44a78b9a89c">
+          <AttributeID>Alternate Review ID</AttributeID>
+          <Name>Alternate Review ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9430b9c6-2484-4656-b97e-9e5f697c5918">
+          <AttributeID>Review Number</AttributeID>
+          <Name>Review Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5a95db62-2d14-4a25-bfd5-7381ba806850">
+          <AttributeID>Review Date</AttributeID>
+          <Name>Review Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f01ee23-df94-4674-b83b-e5acf9660e92">
+          <AttributeID>Review Ratings</AttributeID>
+          <Name>Review Ratings</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6b527f6d-c7d3-472f-a249-0209f3808233">
+          <AttributeID>Reviews Title</AttributeID>
+          <Name>Reviews Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bf5912e6-4f46-4306-ad4a-1a06176784a9">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4adfc36a-6cd7-4176-82cb-5477d48d36f1">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc4dd22a-9f28-4b9a-a608-acfa3d7dc559">
+      <ID>Alternate Review ID</ID>
+      <Name>Alternate Review ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d8ec5b2-d3ca-44e8-9382-8b3a1e826341">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea8ace48-db08-4293-be7a-62923e87f0ad">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>AlternateReviewID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b407a700-64ad-4047-b812-c02126cc35b1">
+      <ID>Review Number</ID>
+      <Name>Review Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e83fc7a2-3fd7-4798-984c-4629799f7967">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7285d6a-fe47-44d4-9cb6-061cd487acc9">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>review_number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a9ea911-7310-4a36-922f-0aa084b80d03">
+      <ID>Review Date</ID>
+      <Name>Review Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3d3aaca-6e8b-4afa-8677-08d28b132df2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5bc28f4f-473c-4fe6-9a3b-bd8eb73fa9d5">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>review_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0536e0d2-3194-43ad-a7c0-75c2664400c7">
+      <ID>Review Ratings</ID>
+      <Name>Review Ratings</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44379ed7-9629-4e84-b06a-34794e288d35">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a8c5c69-bf58-4908-a66e-30fa8fa7bf99">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>review_ratings</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89d55814-9aae-463d-b3ff-7f90f87e8f42">
+      <ID>Reviews Title</ID>
+      <Name>Reviews Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70af8d58-dc15-4482-b026-717b57d3666c">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a21a45b4-993f-49f6-a332-95c10f89f7f4">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>reviews_title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ddd08c84-64a0-46fe-bce4-1eebdfac9313">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="958b2dad-adcd-4c80-a1e8-33b7c1b1d7b1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f196f200-49de-4e42-a78d-f0f635ad843b">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33078d90-39a0-49a8-aa92-9847425cc4a1">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e655b3c-a546-4966-849f-6417f56ba28d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="616e3a09-679a-42d3-adea-0a29112bea03">
+            <TableID>dbo_DimReview</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
